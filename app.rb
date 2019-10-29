@@ -10,3 +10,16 @@ set :session_secret,
   get '/secret' do
     "Hello Kenny, Arjun, Taiwo  Michael!"
   end
+
+  get '/cat' do
+    "<HTML>
+    <HEAD>
+    <TITLE>
+    Arjun's first page
+    </TITLE>
+    <div style= 'border: 3px dashed red'>
+    <IMG SRC='http://bit.ly/1eze8aE'>
+    </div>
+    </HEAD>
+    </HTML>"
+  end

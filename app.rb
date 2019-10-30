@@ -11,7 +11,13 @@ set :session_secret,
     "Hello Kenny, Arjun, Taiwo  Michael!"
   end
 
-  get '/cat' do
+  get '/random-cat' do
     @name = ["Oscar", "Viking", "Ortiz"].sample
+    erb(:index)
+  end
+
+  get '/named-cat' do
+    p params
+    @name = params[:name]
     erb(:index)
   end
